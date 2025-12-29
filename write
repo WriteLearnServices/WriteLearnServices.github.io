@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Business Website</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+
+      /* Light Green + Sky Blue Gradient */
+      background: linear-gradient(
+        to right,
+        #b7eacb,   /* light green */
+        #b3e5fc    /* sky blue */
+      );
+
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    h1 {
+      color: #1b5e20;
+      font-size: 42px;
+    }
+
+    p {
+      color: #0d47a1;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      background-color: #2e7d32;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #1b5e20;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcome to My Business</h1>
+    <p>We provide quality services with trust and care.</p>
+
+    <a href="#" class="btn">Contact Us</a>
+  </div>
+</body>
+</html>
