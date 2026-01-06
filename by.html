@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Write Learn Services</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background: #0f172a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar button {
+            background: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 8px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .navbar button:hover {
+            background: #e5e7eb;
+        }
+
+        .content {
+            padding: 30px;
+            max-width: 900px;
+            margin: 30px auto;
+            border-radius: 10px;
+            color: #ffffff;
+        }
+
+        .blue-bg {
+            background: #2563eb;
+        }
+
+        .green-bg {
+            background: #16a34a;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #2563eb, #16a34a);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        .contact a {
+            display: block;
+            margin: 12px 0;
+            font-size: 18px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <button onclick="showHome()">Home</button>
+    <button onclick="showAbout()">About</button>
+    <button onclick="showContact()">Contact Us</button>
+</div>
+
+<div class="content blue-bg" id="content">
+    <h2><b>Welcome to Write Learn Services...!</b></h2>
+    <p>
+        Write Learn Services is a professional academic support platform dedicated to helping students achieve academic success.<br><br>
+        We specialize in high-quality assignment writing services across various subjects and disciplines.<br><br>
+        Our team focuses on delivering original, well-researched, and plagiarism-free content.<br><br>
+        We ensure on-time delivery, confidentiality, and affordable pricing.
+    </p>
+</div>
+
+<script>
+    function showHome() {
+        document.getElementById("content").className = "content blue-bg";
+        document.getElementById("content").innerHTML = `
+        <h2><b>Welcome to Write Learn Services...!</b></h2>
+        <p>
+        Write Learn Services is a professional academic support platform dedicated to helping students achieve academic success.<br><br>
+        We specialize in high-quality assignment writing services across various subjects and disciplines.<br><br>
+        Our team focuses on delivering original, well-researched, and plagiarism-free content.<br><br>
+        We assist students in saving time and reducing academic stress.
+        </p>
+        `;
+    }
+
+    function showAbout() {
+        document.getElementById("content").className = "content green-bg";
+        document.getElementById("content").innerHTML = `
+        <h2>Service List</h2>
+        <ul>
+            <li>Assignment Writing</li>
+            <li>Assignment Front Page Design</li>
+            <li>Resume Writing</li>
+            <li>Notes Writing (Homework)</li>
+            <li>Essay Writing</li>
+            <li>PPT Creation</li>
+            <li>Article & Blog Writing</li>
+            <li>Content Writing</li>
+            <li>Speech Writing</li>
+            <li>Proposal Writing</li>
+        </ul>
+        `;
+    }
+
+    function showContact() {
+        document.getElementById("content").className = "content gradient-bg";
+        document.getElementById("content").innerHTML = `
+        <h2>Contact Us</h2>
+        <p>
+        If you need any further details regarding these services or require any writing assistance, feel free to contact us.<br><br>
+        For more details about our writing services or any assistance you need, please contact us.
+        </p>
+
+        <div class="contact">
+            <a href="tel:+916369159820">📞 +91 63691 59820</a>
+            <a href="mailto:sharmilaabdulkadhar@gmail.com">📧 sharmilaabdulkadhar@gmail.com</a>
+        </div>
+        `;
+    }
+</script>
+
+</body>
+</html>
+
