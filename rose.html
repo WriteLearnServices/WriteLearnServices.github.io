@@ -1,189 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <title>Write Learn Services</title>
-
 <style>
-*{box-sizing:border-box}
-
 body{
     margin:0;
-    font-family:Arial,sans-serif;
-    min-height:100vh;
-    background:linear-gradient(135deg,#dbeafe,#dcfce7);
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #b2f7b2, #dfffdc, #b2f7b2);
 }
 
-.navbar{
-    background:rgba(15,23,42,0.9);
+.header{
+    background:#7be07b;
     padding:15px;
     text-align:center;
 }
 
-.navbar button{
-    background:#fff;
+.menu{
+    text-align:center;
+    margin-top:10px;
+}
+
+.menu button{
+    background:#a5f3a5;
     border:none;
-    padding:10px 22px;
-    margin:0 8px;
-    font-size:16px;
+    padding:12px 25px;
+    margin:5px;
+    font-size:18px;
     cursor:pointer;
-    border-radius:6px;
+    border-radius:5px;
+    color:#004aad;
     font-weight:bold;
 }
 
-.navbar button:hover{
-    background:#e0f2fe;
+.menu button:hover{
+    background:#7be07b;
 }
 
 .content{
-    max-width:1100px;
-    margin:30px auto;
-    padding:35px;
-    background:rgba(255,255,255,0.9);
-    border-radius:14px;
-    color:#0f172a;
+    padding:30px;
+    color:#004aad;
+    display:none;
 }
 
-h2{text-align:center}
-
-/* SERVICE BOX STYLE */
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:20px;
-    margin-top:25px;
+h1{
+    color:#004aad;
 }
 
 .service-box{
-    background:#f8fafc;
-    border-radius:14px;
-    padding:20px;
-    text-align:center;
-    box-shadow:0 6px 15px rgba(0,0,0,0.1);
-    transition:0.3s;
-}
-
-.service-box:hover{
-    transform:translateY(-5px);
-}
-
-.service-box img{
-    width:60px;
-    margin-bottom:12px;
-}
-
-.service-box h4{
-    margin:0;
-    font-size:16px;
-    color:#1e3a8a;
-}
-
-.contact a{
-    display:block;
-    margin:12px 0;
-    font-size:18px;
-    text-decoration:none;
-    color:#1d4ed8;
+    background:#a5f3a5;
+    padding:10px;
+    margin:10px;
+    border-radius:8px;
+    display:inline-block;
+    width:250px;
+    color:#004aad;
     font-weight:bold;
 }
+
+a{
+    color:#004aad;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:18px;
+}
 </style>
+
+<script>
+function showPage(page){
+    document.getElementById("home").style.display="none";
+    document.getElementById("about").style.display="none";
+    document.getElementById("contact").style.display="none";
+    document.getElementById(page).style.display="block";
+}
+</script>
 </head>
 
 <body>
 
-<div class="navbar">
-    <button onclick="showHome()">Home</button>
-    <button onclick="showAbout()">About</button>
-    <button onclick="showContact()">Contact Us</button>
+<div class="header">
+    <h1>Write Learn Services</h1>
+    <div class="menu">
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('about')">About</button>
+        <button onclick="showPage('contact')">Contact Us</button>
+    </div>
 </div>
 
-<div class="content" id="content">
-    <h2><b>Welcome to Write Learn Services...!</b></h2>
+<!-- HOME -->
+<div id="home" class="content" style="display:block;">
+    <h1><b>Welcome to Write Learn Services...!</b></h1>
     <p>
-        Write Learn Services is a professional academic support platform dedicated to helping students achieve academic success.<br><br>
-        We specialize in plagiarism-free assignments, academic documentation, and student-friendly services.<br><br>
-        Our goal is to support learning, not just writing.
+Write Learn Services is a professional academic support platform dedicated to helping students achieve academic success. 
+We specialize in high-quality assignment writing services across various subjects and disciplines. 
+Our team focuses on delivering original, well-researched, and plagiarism-free content. 
+Write Learn Services understands the importance of deadlines and ensures on-time delivery for every project. 
+We provide project report writing with proper structure and academic standards. 
+Our services include academic document formatting as per university guidelines. 
+We also design professional and attractive front pages for assignments and reports. 
+Each document is written with clarity, accuracy, and easy-to-understand language. 
+We support school, college, and university students. 
+Confidentiality and data privacy are strictly maintained. 
+Our writers follow updated academic writing styles and formats. 
+We offer customized solutions based on student requirements. 
+Quality checking is done before final submission. 
+Affordable pricing makes our services accessible to students. 
+We provide quick revisions when required. 
+Customer satisfaction is our top priority. 
+We assist students in saving time and reducing academic stress. 
+Our goal is to support learning, not just writing. 
+Write Learn Services helps students present their ideas professionally. 
+We are committed to academic excellence and reliable service.
     </p>
 </div>
 
-<script>
-function showHome(){
-document.getElementById("content").innerHTML=`
-<h2><b>Welcome to Write Learn Services...!</b></h2>
-<p>
-Write Learn Services supports school, college, and university students with high-quality academic assistance.
-</p>`;
-}
+<!-- ABOUT -->
+<div id="about" class="content">
+    <h1>Service List</h1>
 
-function showAbout(){
-document.getElementById("content").innerHTML=`
-<h2>Service List</h2>
-
-<div class="services">
-<div class="service-box">
-<img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
-<h4>Assignment Writing</h4>
+    <div class="service-box">Assignment Writing</div>
+    <div class="service-box">Assignment Front Page Design</div>
+    <div class="service-box">Resume Writing</div>
+    <div class="service-box">Notes Writing (Homework)</div>
+    <div class="service-box">Essay Writing</div>
+    <div class="service-box">PPT Creation</div>
+    <div class="service-box">Article & Blog Writing</div>
+    <div class="service-box">Content Writing</div>
+    <div class="service-box">Speech Writing</div>
+    <div class="service-box">Proposal Writing</div>
 </div>
 
-<div class="service-box">
-<img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png">
-<h4>Front Page Design</h4>
-</div>
+<!-- CONTACT -->
+<div id="contact" class="content">
+    <h1>Contact Us</h1>
+    <p>
+If you need any further details regarding these services or require any writing assistance, feel free to contact us. We are always ready to help you.
+    </p>
+    <p>
+For more details about our writing services or any assistance you need, please contact us.
+    </p>
 
-<div class="service-box">
-<img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png">
-<h4>Resume Writing</h4>
+    <p>📞 <a href="tel:+916369159820">+91 63691 59820</a></p>
+    <p>📧 <a href="mailto:sharmilaabdulkadhar@gmail.com">sharmilaabdulkadhar@gmail.com</a></p>
 </div>
-
-<div class="service-box">
-<img src="https://cdn-icons-png.flaticon.com/512/4341/4341069.png">
-<h4>Notes / Homework</h4>
-</div>
-
-<div class="service-box">
-<img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png">
-<h4>Essay Writing</h4>
-</div>
-
-<div class="service-box">
-<img src="https://cdn-icons-png.flaticon.com/512/888/888879.png">
-<h4>PPT Creation</h4>
-</div>
-
-<div class="service-box">
-<img src="https://cdn-icons-png.flaticon.com/512/2593/2593549.png">
-<h4>Article & Blog</h4>
-</div>
-
-<div class="service-box">
-<img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png">
-<h4>Content Writing</h4>
-</div>
-
-<div class="service-box">
-<img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png">
-<h4>Speech Writing</h4>
-</div>
-
-<div class="service-box">
-<img src="https://cdn-icons-png.flaticon.com/512/942/942748.png">
-<h4>Proposal Writing</h4>
-</div>
-</div>`;
-}
-
-function showContact(){
-document.getElementById("content").innerHTML=`
-<h2>Contact Us</h2>
-<p>
-If you need any further details or writing assistance, feel free to contact us.
-</p>
-<div class="contact">
-<a href="tel:+916369159820">📞 +91 63691 59820</a>
-<a href="mailto:sharmilaabdulkadhar@gmail.com">📧 sharmilaabdulkadhar@gmail.com</a>
-</div>`;
-}
-</script>
 
 </body>
 </html>
